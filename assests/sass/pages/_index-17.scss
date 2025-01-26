@@ -1,0 +1,32 @@
+/******** Blog Style 01 *******/
+
+/******** News Section Start *******/
+.news-section {
+    .page-pagination {
+        ul {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            justify-content: center;
+            li {
+                a {
+                    width: 50px;
+                    height: 50px;
+                    color: #fff;
+                    background: #111111;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 24px;
+                    font-weight: 500;
+                    transition: 0.3s;
+                    &:hover {
+                        background: #ea062b;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+/******** News Section End *******/

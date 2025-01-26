@@ -1,0 +1,101 @@
+/******* Donate ***********/
+
+/****** Donate Section Start *******/
+.donate-section {
+    padding: 100px 0;
+    @include screen-768 {
+        padding: 50px 0;
+    }
+}
+.donate-title {
+    h2 {
+        @include screen-768 {
+            font-size: 42px;
+        }
+        @include screen-576 {
+            font-size: 36px;
+        }
+    }
+}
+.donate-select {
+    border: 1px solid #cacaca;
+    padding: 30px;
+    box-sizing: border-box;
+    margin-bottom: 60px;
+    .select-box {
+        select {
+            width: 100%;
+            border: 1px solid #cacaca;
+            padding: 7px 15px;
+            background-color: transparent;
+            outline: none;
+            &:focus {
+                border: 1px solid #ea062b;
+            }
+        }
+        option {
+            cursor: pointer;
+            font-weight: 400;
+            line-height: 40px;
+            list-style: none;
+            min-height: 40px;
+            outline: none;
+            padding-left: 18px;
+            padding-right: 29px;
+            text-align: left;
+        }
+    }
+}
+    
+
+
+.donate-form-content {
+    border: 1px solid #cacaca;
+    padding: 30px;
+    box-sizing: border-box;
+    .donate-form {
+        form {
+            input {
+                width: 100%;
+                box-sizing: border-box;
+                margin-bottom: 30px;
+                padding: 13px;
+                color: #8c8c8c;
+                font-weight: 400;
+                text-transform: capitalize;
+                border: 1px solid #cacaca;
+                outline: none;
+                &:focus {
+                    border: 1px solid #ea062b;
+                }
+            }
+            textarea {
+                width: 100%;
+                box-sizing: border-box;
+                margin-bottom: 30px;
+                padding: 13px;
+                color: #8c8c8c;
+                font-weight: 400;
+                text-transform: capitalize;
+                outline: none;
+                &:focus {
+                    border: 1px solid #ea062b;
+                }
+            }
+            .donate-btn {
+                display: inline-block;
+                padding: 14px 41px;
+                background: #ea062b;
+                color: #fff;
+                font-size: 18px;
+                font-weight: 500;
+                transition: 0.3s;
+                &:hover {
+                    background: #111111;
+                    color: #fff;
+                }
+            } 
+        }
+    }
+}
+/****** Donate Section End *******/

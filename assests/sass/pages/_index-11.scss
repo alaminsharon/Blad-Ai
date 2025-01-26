@@ -1,0 +1,100 @@
+/****** Faq ********/
+
+/****** Faq Section Start *******/
+.faq-section {
+    padding: 100px 0;
+    @include screen-768 {
+        padding: 50px 0;
+    }
+}
+.faq-title {
+    h2 {
+        @include screen-768 {
+            font-size: 42px;
+        }
+        @include screen-576 {
+            font-size: 36px;
+        }
+    }
+}
+.km_accordion {
+    .accordion-item {
+        border: 0;
+        box-shadow: 0px 16px 35px 0px rgba(0, 0, 0, 0.15);
+        .accordion-header {
+            .accordion-button {
+                font-size: 20px;
+                font-weight: 600;
+                &::after {
+                    background: none;
+                    content: "\f107";
+                    font-family: "FontAwesome";
+                    width: auto;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+/****** Faq Section End *******/
+
+/****** Submit-form Section Start *******/
+.submit-form-section {
+    padding: 100px 0;
+    background: #f9f9f9;
+    @include screen-768 {
+        padding: 50px 0;
+    }
+}
+.submit-form-content {
+    form {
+        input {
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            padding: 13px;
+            color: #8c8c8c;
+            font-weight: 400;
+            text-transform: capitalize;
+            border: 1px solid transparent;
+            box-shadow: 0px 3px 81px 0px rgba(0, 0, 0, 0.09);
+            background: #fff;
+            outline: none;
+            &:focus {
+                border: 1px solid #ea062b;
+            }
+        }
+        textarea {
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            padding: 13px;
+            color: #8c8c8c;
+            font-weight: 400;
+            text-transform: capitalize;
+            border: 1px solid transparent;
+            box-shadow: 0px 3px 81px 0px rgba(0, 0, 0, 0.09);
+            background: #fff;
+            outline: none;
+            &:focus {
+                border: 1px solid #ea062b;
+            }
+        }
+        .submit-form-btn {
+            width: 100%;
+            display: inline-block;
+            padding: 14px 41px;
+            background: #ea062b;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 500;
+            transition: 0.3s;
+            border: 0;
+            &:hover {
+                background: #111111;
+                color: #fff;
+            }
+        }
+    }
+}
+/****** Submit-form Section End *******/

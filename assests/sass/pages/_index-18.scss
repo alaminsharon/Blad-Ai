@@ -1,0 +1,107 @@
+/***** Team Members *********/
+
+/*********** Team Section Start **************/
+.team-section-2 {
+    padding: 115px 0;
+    padding-bottom: 100px;
+    background: #fff;
+    @include screen-992 {
+        padding: 100px 0;
+    }
+    @include screen-768 {
+        padding: 80px 0;
+    }
+    @include screen-576 {
+        padding: 50px 0;
+    }
+}
+.team-title {
+    h2 {
+        @include screen-768 {
+            font-size: 42px;
+        }
+        @include screen-576 {
+            font-size: 36px;
+        }
+    }
+}
+.team-card-2 {
+    max-width: 350px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 35px;
+    padding-bottom: 0;
+    box-shadow: 0px 0px 20px #0000001c;
+    transition: 0.3s;
+    .team-img {
+        position: relative;
+        img {
+            transform: scale(1);
+        }
+        ul {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #0000008c;
+            left: 0;
+            top: 0;
+            align-items: center;
+            justify-content: center;
+            gap: 11px;
+            transform: scale(0.6);
+            transition: 0.3s;
+            visibility: hidden;
+            opacity: 0;
+            li {
+                transition: 0.3s;
+                a {
+                    width: 40px;
+                    height: 40px;
+                    background: #fff;
+                    color: #ea062b;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: 0.3s;
+                }
+                &:hover a {
+                    background: #ea062b;
+                    color: #fff;
+                }
+            }:nth-child(1) a {
+                border-radius: 25px 0px 0px 25px;
+            }
+            :nth-child(4) a {
+                border-radius: 0px 25px 25px 0px;
+            }
+        }
+    }
+    .team-content {
+        padding: 30px;
+        a {
+            h5 {
+                margin-top: 35px;
+                margin-bottom: 30px;
+                transition: 0.3s;
+                &:hover {
+                    color: #ea062b;
+                }
+            }
+        }
+        p {
+            font-size: 18px;
+            font-weight: 400;
+            color: #666666;
+        }
+    }
+    &:hover .team-img {
+        overflow: hidden;
+        transform: scale(1.1);
+    }
+    &:hover .team-img  ul {
+        visibility: visible;
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+/*********** Team Section End **************/

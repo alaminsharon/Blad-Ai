@@ -1,0 +1,1272 @@
+/***** Home Page 1 **********/
+
+/*********** Hero Section Start **********/
+.hero-slider {
+    position: relative;
+}
+.hero-section {
+    background-size: cover !important;
+    padding: 145px 0;
+    padding-bottom: 204px;
+    overflow: hidden;
+    @include screen-992 {
+        padding-bottom: 115px;
+    }
+}
+.hero-content {
+    .video-btn {
+        margin-bottom: 35px;
+        a {
+            width: 65px;
+            height: 65px;
+            background-color: #ea062b;
+            color: #fff;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            i {
+                font-size: 20px;
+            }
+        }
+        h6 {
+            font-weight: 600;
+            margin-left: 15px;
+            animation: 3s fadeInUp;
+        }
+    }
+    .hero-subtitle {
+        h3 {
+            color: #ea062b;
+            animation: 3s fadeInUp;
+            @include screen-576 {
+                font-size: 30px;
+            }
+        }
+    }
+    .hero-title {
+        h1 {
+            max-width: 630px;
+            margin-top: 40px;
+            margin-bottom: 45px;
+            animation: 3s fadeInUp;
+            @include screen-650 {
+                font-size: 60px;
+            }
+            @include screen-576 {
+                font-size: 50px;
+            }
+            @include screen-460 {
+                font-size: 40px;
+            }
+        }
+    }
+    .hero-btn {
+        a {
+            padding: 13px 40px;
+            background: #ea062b;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            animation: 3s fadeInUp;
+            transition: 0.3s;
+            &:hover {
+                background: #111111;
+                color: #fff;
+            }
+        }
+    }
+}
+.slick-prev {
+    position: absolute;
+    left: 70px;
+    color: #ea062b;
+    z-index: 666;
+    font-size: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    @include screen-1340 {
+        top: initial;
+        left: 47%;
+        bottom: 80px;
+        color: #fff;
+    }
+    @include screen-992 {
+        left: 46%;
+        bottom: 40px;
+        color: #fff;
+    }
+}
+.slick-next {
+    position: absolute;
+    right: 70px;
+    color: #ea062b;
+    z-index: 666;
+    font-size: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    @include screen-1340 {
+        top: initial;
+        right: 47%;
+        bottom: 80px;
+        color: #fff;
+    }
+    @include screen-992 {
+        left: 46%;
+        bottom: 40px;
+        color: #fff;
+    }
+}
+
+/********** Hero Section End ***********/
+
+
+/****register section start ******/
+
+.register-section {
+    padding: 115px 0;
+    background: #e7e7e7;
+    position: relative;
+    @include screen-992 {
+        padding: 100px 0;
+    }
+    @include screen-768 {
+        padding: 80px 0;
+    }
+    @include screen-576 {
+        padding: 50px 0;
+    }
+}
+.register-top {
+    margin-top: -205px;
+    margin-bottom: 115px;
+    z-index: 22;
+    position: relative;
+    @include screen-992 {
+        margin-top: 0px;
+        margin-bottom: 50px;
+    }
+}
+.register {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 35px;
+    gap: 15px;
+    .register-content {
+        h4 {
+            color: #fff;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #fff;
+            max-width: 395px;
+            width: 100%;
+        }
+    }
+    .register-icon-black {
+        a {
+            i {
+                color: #fff;
+                font-size: 35px;
+                &:hover {
+                    color: #111111;
+                }
+            }
+        }
+    }
+    .register-icon-red {
+        a {
+            i {
+                color: #fff;
+                font-size: 35px;
+                &:hover {
+                    color: #ea062b;
+                }
+            }
+        }
+    }
+}
+.red-card {
+    background: #ea062b;
+}
+.black-card {
+    background: #111111;
+}
+
+/*******donate*********/
+.donate-card {
+    .donate-item {
+        padding: 15px;
+        background: #fff;
+        .donate-img {
+            position: relative;
+            overflow: hidden;
+            img {
+                transform: scale(1);
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: #49496e6e;
+                top: 0;
+                left: 0;
+                visibility: hidden;
+                opacity: 0;
+                z-index: 1;
+            }
+        }
+        .donate-content {
+            position: relative;
+            padding-top: 70px;
+            span {
+                position: absolute;
+                top: -45px;
+                left: 50%;
+                transform: translateX(-50%);
+                display: inline-flex;
+                width: 90px;
+                height: 90px;
+                background: #111111;
+                align-items: center;
+                justify-content: center;
+                margin: auto;
+                transition: 0.3s;
+                z-index: 10;
+            }
+            a {
+                h5 {
+                    font-weight: 600;
+                    color: #111111;
+                    margin-bottom: 30px;
+                    transition: 0.3s;
+                    &:hover {
+                        color: #ea062b;
+                    }
+                }
+                p {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+    .donate-btn {
+        a {
+            color: #fff;
+            padding: 13px 0;
+            background: #111111;
+            transition: 0.3s;
+        }
+    }
+    &:hover {
+        .donate-item .donate-img::before {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+    &:hover {
+        .donate-item .donate-img img {
+           transform: scale(1.1); 
+        }
+    }
+    &:hover {
+        .donate-item .donate-content span {
+            background-color: #ea062b;
+        }
+    }
+    &:hover {
+        .donate-btn a {
+            background-color: #ea062b;
+        }
+    }
+}
+
+/*********Become*********/
+.become-card {
+    h5 {
+        font-weight: 600;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        padding-left: 90px;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            background: #111111;
+            left: 0;
+            top: 50%;
+            width: 80px;
+            height: 2px;
+        }
+    }
+    p {
+        color: #666666;
+    }
+}
+/******* register section end ***************/
+
+
+
+/***************** help section start ***************/
+.help-section {
+    padding: 115px 0;
+    overflow: hidden;
+    @include screen-992 {
+        padding: 100px 0;
+    }
+    @include screen-768 {
+        padding: 80px 0;
+    }
+    @include screen-576 {
+        padding: 50px 0;
+    }
+}
+.help-thumb {
+    .help-over {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        @include screen-768 {
+            right: 40px;
+            top: 50%;
+            transform: translateY(-10%);
+        }
+    }
+    .help-red {
+        position: absolute;
+        z-index: -1;
+    }
+    .help-middle {
+        margin-left: 14px;
+        margin-top: 12px;
+    }
+    .help-end {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+.help-content {
+    .red-paragraph {
+        text-transform: uppercase;
+        font-weight: 500;
+        color: #ea062b;
+    }
+    h2 {
+        margin-top: 25px;
+        margin-bottom: 30px;
+        @include screen-1000 {
+            font-size: 40px;
+        }
+        @include screen-830 {
+            font-size: 34px;
+        }
+    }
+    p {
+        font-weight: 400;
+    }
+    .help-content-item {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        ul {
+            li {
+                color: #111111;
+                font-size: 16px;
+                font-weight: 400;
+                i {
+                    color: #ea062b;
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+    .help-btn {
+        padding: 13px 40px;
+        background: #ea062b;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s;
+        &:hover {
+            background: #111111;
+            color: #fff;
+        }
+    }
+}
+/********** help section end **************/
+
+
+/********** Counter Section Start **********/
+.counter-section {
+    background: url(../images/counter-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 85px;
+    padding-bottom: 50px;
+    z-index: -2;
+    overflow: hidden;
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: url(../images/counter-bg-2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+}
+.counter-item {
+    h2 {
+        color: #fff;
+        margin-top: 25px;
+        margin-bottom: 10px;
+        font-weight: 600;
+    }
+    p {
+        color: #fff;
+        font-size: 18px;
+        text-transform: uppercase
+    }
+}
+/********** Counter Section End ************/
+
+
+/********** Service Section Start **********/
+.service-section {
+    padding: 115px 0;
+    padding-bottom: 70px;
+    @include screen-992 {
+        padding: 100px 0;
+    }
+    @include screen-768 {
+        padding: 80px 0;
+    }
+    @include screen-576 {
+        padding: 50px 0;
+    }
+}
+.service-title {
+    h2 {
+        @include screen-768 {
+            font-size: 42px;
+        }
+        @include screen-576 {
+            font-size: 36px;
+        }
+    }
+}
+.service-thumb {
+    overflow: hidden;
+    img {
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+.service-content {
+    h1 {
+        color: #e7e7e7;
+    }
+    a {
+        h4 {
+            margin-top: 10px;
+            margin-bottom: 20px;
+            transition: 0.3s;
+            &:hover {
+                color: #ea062b;
+            }
+        }
+    }
+    p {
+        color: #666666;
+        margin-bottom: 30px;
+    }
+    .service-btn {
+        padding: 13px 40px;
+        background: #ea062b;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s;
+        &:hover {
+            background: #111111;
+            color: #fff;
+        }
+    }
+}
+/************** Service Section End ***************/
+
+
+/************** Call Section Start ****************/
+.call-section {
+    background: url(../images/call.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 90px 0;
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        background: url(../images/call-bg.png);
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    @include screen-768 {
+        padding-bottom: 70px 0;
+    }
+}
+.call-content {
+    border: 8px solid #ea062b;
+    position: relative;
+    padding: 70px 0;
+    .call-icon {
+        position: absolute;
+        background: #ea062b;
+        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+        width: 78px;
+        height: 78px;
+        color: #fff;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        top: -43px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    p {
+        color: #fff;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    a {
+        h2 {
+            color: #fff;
+            margin-top: 33px;
+            margin-bottom: 37px;
+            span {
+                color: #fff;
+            }
+            @include screen-768 {
+                font-size: 42px;
+            }
+            @include screen-576 {
+                font-size: 36px;
+            }
+        }
+    }
+    ul {
+        li {
+            span {
+                color: #fff;
+                font-size: 16px;
+                font-weight: 400;
+                transition: 0.3s;
+                i {
+                    margin-right: 5px;
+                }
+                &:hover {
+                    color: #ea062b;
+                }
+            }
+            a {
+                color: #fff;
+                transition: 0.3s;
+                &:hover {
+                    color: #ea062b;
+                }
+            }
+
+        }
+    }
+}
+/************* Call Section Start *************/
+
+
+/************** Campaign Section Start *********/
+.campaign-section {
+    padding: 115px 0;
+    padding-bottom: 70px;
+    background: #e7e7e7;
+    @include screen-992 {
+        padding: 100px 0;
+    }
+    @include screen-768 {
+        padding: 80px 0;
+    }
+    @include screen-576 {
+        padding: 50px 0;
+    }
+}
+.campaign-title {
+    h2 {
+        @include screen-768 {
+            font-size: 42px;
+        }
+        @include screen-576 {
+            font-size: 36px;
+        }
+    }
+}
+.campaign-card {
+    box-shadow: 0px 0px 20px #0000002b;
+    margin: 0 20px;
+    @include screen-1200 {
+        max-width: 555px;
+        margin: auto;
+    }
+    .campaign-card-thumb {
+        position: relative;
+        overflow: hidden;
+        max-width: 227px;
+        max-height: 286px;
+        img {
+            width: 100% !important;
+            height: 100%;
+        }
+        a {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #00000094;
+            color: #fff;
+            justify-content: center;
+            align-items: center;
+            left: 0;
+            top: 0;
+            display: inline-flex;
+            font-size: 25px;
+            transform: scale(0);
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.3s;
+        }
+    }
+    &:hover .campaign-card-thumb img {
+        transform: scale(1.1);
+    }
+    &:hover .campaign-card-thumb a {
+        visibility: visible;
+        opacity: 1;
+        transform: scale(1);
+    }
+    .campaign-card-content {
+        padding: 30px 23px 30px 15px;
+        background: #fff;
+        overflow: hidden;
+        max-width: 327px;
+        max-height: 286px;
+        .date {
+            span {
+                display: block;
+                color: #666666;
+                font-size: 14px;
+                font-weight: 500;
+                margin-bottom: 10px;
+                i {
+                    color: #ea062b;
+                }
+            }
+        }
+        a {
+            h6 {
+                margin-bottom: 15px;
+                color: #111111;
+                transition: 0.3s;
+                &:hover {
+                    color: #ea062b;
+                }
+            }
+        }
+        p {
+            margin-bottom: 30px;
+            color: #666666;
+        }
+        .time {
+           flex-wrap: wrap;
+           span {
+            color: #666666;
+            font-weight: 500;
+            i {
+                color: #ea062b;
+                display: inline-block;
+                margin-right: 5px;
+            }
+           } 
+        }
+    }
+}
+.campaign-slider {
+    .slick-dots {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        margin-top: 50px;
+        li {
+            display: inline-block;
+            button {
+                width: 18px; 
+                height: 18px;
+                font-size: 0px;
+                border: 5px solid #e7e7e7;
+                margin: 3px 0;
+                background: transparent; 
+                border-radius: 50%; 
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                outline: 1px solid #ea062b;
+            }
+            &.slick-active {
+                button {
+                    background: #ea062b;
+                }
+            }
+        }
+    }
+}
+
+/************* Campaign Section Start **********/
+
+
+/************* Client Section Start ***********/
+.client-section {
+    padding: 115px 0;
+    padding-bottom: 70px;
+    background: #fff;
+    @include screen-992 {
+        padding: 100px 0;
+    }
+    @include screen-768 {
+        padding: 80px 0;
+    }
+    @include screen-576 {
+        padding: 50px 0;
+    }
+}
+.client-title {
+    h2 {
+        @include screen-768 {
+            font-size: 42px;
+        }
+        @include screen-576 {
+            font-size: 36px;
+        }
+    }
+}
+.client-card {
+    margin: 0 12px;
+}
+.client-content {
+    background: #fff;
+    box-shadow: 0px 0px 13px #dddddd8c;
+    padding: 30px 25px;
+    margin: 35px 0;
+    margin-top: 20px;
+    border-radius: 4px;
+    position: relative;
+    .star {
+        margin-bottom: 30px;
+        span {
+            color: #ffc92e;
+        }
+    }
+    p {
+        font-size: 18px;
+        color: #111111;
+    }
+}
+.client-owner {
+    margin-left: 35px;
+    .client-owner-img {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        flex-shrink: 0;
+        text-align: center;
+        img {
+            transition: 0.3s;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+    .client-owner-name {
+        p {
+            font-size: 19px;
+            color: #666666;
+            margin-top: 10px;
+        }
+    }
+}
+/*********** Client Section Start ************/
+
+/*********** Donor Section Start *************/
+.donor-section {
+    padding: 115px 0;
+    background: url(../images/donor-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        background: #000000ab;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        z-index: -1;
+    }
+    @include screen-992 {
+        padding: 100px 0;
+    }
+    @include screen-768 {
+        padding: 80px 0;
+    }
+    @include screen-576 {
+        padding: 50px 0;
+    }
+}
+.donor-title {
+    h2 {
+        color: #fff;
+        @include screen-768 {
+            font-size: 42px;
+        }
+        @include screen-576 {
+            font-size: 36px;
+        }
+    }
+    .video-play {
+        position: relative;
+        width: 90px;
+        height: 90px;
+        margin: auto;
+        margin-top: 35px;
+        a {
+            width: 70px;
+            height: 70px;
+            font-size: 20px;
+            background: #fff;
+            color: #ea062b;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        img {
+            position: absolute;
+            left: 1px;
+            top: -9px;
+            z-index: -1;
+        }
+    }
+}
+/*********** Donor Section End *************/
+
+/*********** Form Section Start ************/
+.form-section {
+    margin-top: -50px;
+    z-index: 1;
+    position: relative;
+}
+.blood-content {
+    padding: 35px;
+    background: #fff;
+    box-shadow: 0px 0px 20px #0000002b;
+    height: 100%;
+    h4 {
+        margin-bottom: 35px;
+        @include screen-460 {
+            font-size: 20px;
+        }
+    }
+    ul {
+        li {
+            font-size: 16px;
+            color: #111111;
+            i {
+                color: #ea062b;
+                margin-right: 10px;
+                display: inline-block;
+            }
+            +li {
+                border-top: 1px solid #e7e7e7;
+                padding-top: 18px;
+                margin-top: 18px;
+            }
+        }
+    }
+}
+.appoinment-content {
+    padding: 35px;
+    background: #fff;
+    box-shadow: 0px 0px 20px #0000002b;
+    padding-bottom: 30px;
+    h4 {
+        margin-bottom: 35px;
+        @include screen-460 {
+            font-size: 20px;
+        }
+    }
+    .contact-form-1 {
+        .name-input {
+            display: flex;
+            margin-bottom: 24px;
+            gap: 20px;
+            @include screen-1200 {
+                display: block;
+                input {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        .input-item {
+            background-color: #f5f5f5;
+            color: #111111;
+            border-radius: 0;
+            width: 100%;
+            height: 55px;
+            padding-left: 18px;
+            border: 1px solid transparent;
+            display: block;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.5;
+            outline: none;
+            &:focus {
+            border: 1px solid #ea062b;
+            }
+        }
+        .donation-select {
+            margin-top: 24px;
+            margin-bottom: 24px;
+            background-color: #f5f5f5;
+            color: #111111;
+            border-radius: 0;
+            width: 100%;
+            height: 55px;
+            padding-left: 18px;
+            border: 1px solid transparent;
+            outline: none;
+            &:focus {
+            border: 1px solid #ea062b;
+            }
+        }
+        .text {
+            background-color: #f5f5f5;
+            color: #111111;
+            border-radius: 0;
+            width: 100%;
+            height: 180px;
+            padding: 6px 12px;
+            padding-left: 18px;
+            border: 1px solid transparent;
+            display: block;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.5;
+            margin-bottom: 24px;
+            outline: none;
+            &:focus {
+            border: 1px solid #ea062b;
+            }
+        }
+        .red-btn {
+            padding: 13px 35px;
+            font-size: 18px;
+            font-weight: 500;
+            background: #ea062b;
+            color: #fff;
+            border: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.3s;
+            &:hover {
+                background: #111111;
+                color: #fff;
+            }
+        }
+    }
+}
+/*********** Form Section End **************/
+
+
+/*********** Team Section Start **************/
+.team-section {
+    padding: 115px 0;
+    padding-bottom: 100px;
+    background: #fff;
+    @include screen-992 {
+        padding: 100px 0;
+    }
+    @include screen-768 {
+        padding: 80px 0;
+    }
+    @include screen-576 {
+        padding: 50px 0;
+    }
+}
+.team-title {
+    h2 {
+        @include screen-768 {
+            font-size: 42px;
+        }
+        @include screen-576 {
+            font-size: 36px;
+        }
+    }
+}
+.team-card {
+    background: #fff;
+    padding: 35px;
+    padding-bottom: 0;
+    box-shadow: 0px 0px 20px #0000001c;
+    transition: 0.3s;
+    .team-img {
+        position: relative;
+        img {
+            transform: scale(1);
+        }
+        ul {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #0000008c;
+            left: 0;
+            top: 0;
+            align-items: center;
+            justify-content: center;
+            gap: 11px;
+            transform: scale(0.6);
+            transition: 0.3s;
+            visibility: hidden;
+            opacity: 0;
+            li {
+                transition: 0.3s;
+                a {
+                    width: 40px;
+                    height: 40px;
+                    background: #fff;
+                    color: #ea062b;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: 0.3s;
+                }
+                &:hover a {
+                    background: #ea062b;
+                    color: #fff;
+                }
+            }:nth-child(1) a {
+                border-radius: 25px 0px 0px 25px;
+            }
+            :nth-child(4) a {
+                border-radius: 0px 25px 25px 0px;
+            }
+        }
+    }
+    .team-content {
+        padding: 30px;
+        a {
+            h5 {
+                margin-top: 35px;
+                margin-bottom: 30px;
+                transition: 0.3s;
+                &:hover {
+                    color: #ea062b;
+                }
+            }
+        }
+        p {
+            font-size: 18px;
+            font-weight: 400;
+            color: #666666;
+        }
+    }
+    &:hover .team-img {
+        overflow: hidden;
+        transform: scale(1.1);
+    }
+    &:hover .team-img  ul {
+        visibility: visible;
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+/*********** Team Section End **************/
+
+
+/*********** News Section Start **************/
+.news-section {
+    padding: 115px 0;
+    background: #e7e7e7;
+    @include screen-992 {
+        padding: 100px 0;
+    }
+    @include screen-768 {
+        padding: 80px 0;
+    }
+    @include screen-576 {
+        padding: 50px 0;
+    }
+}
+.news-title {
+    h2 {
+        @include screen-768 {
+            font-size: 42px;
+        }
+        @include screen-576 {
+            font-size: 36px;
+        }
+    }
+}
+.news-card {
+    box-shadow: 0px 0px 20px #0000002b;
+    height: 100%;
+    .news-img {
+        position: relative;
+        overflow: hidden;
+        img {
+            width: 100%;
+        }
+        a {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #00000094;
+            color: #fff;
+            justify-content: center;
+            align-items: center;
+            left: 0;
+            top: 0;
+            display: inline-flex;
+            font-size: 25px;
+            transform: scale(0);
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.3s;
+        }
+    }
+    &:hover .news-img img {
+        transform: scale(1.1);
+    }
+    &:hover .news-img a {
+        visibility: visible;
+        opacity: 1;
+        transform: scale(1);
+    }
+    .news-content {
+        padding: 20px;
+        background: #fff;
+        .date {
+            margin-bottom: 25px;
+            span {
+                color: #ea062b;
+                font-size: 16px;
+            }
+        }
+        a {
+            h5 {
+                margin-bottom: 30px;
+                transition: 0.3s;
+                &:hover {
+                    color: #ea062b;
+                }
+            }
+        }
+        p {
+            margin-bottom: 25px;
+            color: #666666;
+        }
+        a {
+            font-size: 16px;
+            font-weight: 700;
+            color: #000;
+        }
+    }
+    &:hover .news-content a {
+        color: #ea062b;
+    }
+    &:hover .news-content a i {
+        color: #ea062b;
+    }
+}
+/*********** News Section End **************/
+
+
+/*********** World Section Start **************/
+.world-section {
+    padding: 60px 0;
+    background: #ea062b;
+}
+.world-content {
+    h2 {
+        margin-bottom: 30px;
+        color: #fff;
+        font-weight: 600;
+        @include screen-768 {
+            font-size: 42px;
+        }
+        @include screen-576 {
+            font-size: 36px;
+        }
+    }
+    p {
+       color: #fff; 
+    }
+}
+.world-btn {
+    a {
+        padding: 13px 35px;
+        background: #fff;
+        color: #111111;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        font-weight: 600;
+        transition: 0.3s;
+        &:hover {
+            background: #111111;
+            color: #fff;
+        }
+    }
+    @include screen-992 {
+        margin-top: 30px;
+    }
+}
+/*********** World Section End **************/

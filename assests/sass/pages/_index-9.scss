@@ -1,0 +1,200 @@
+/********* Service Details *********/
+
+/********* Service details Section Start *********/
+.service-details-section {
+    padding: 100px 0;
+    @include screen-768 {
+        padding: 50px 0;
+    }
+}
+.service-details-one {
+    background: #f1f1f1;
+    padding: 30px 20px;
+    position: relative;
+    h5 {
+        font-size: 24px;
+    }
+    .service-details-list {
+        li {
+            a {
+                background: #fff;
+                color: #111111;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 20px;
+                margin-bottom: 13px;
+                font-weight: 500;
+                text-transform: capitalize;
+                position: relative;
+                z-index: 1;
+                transition: 0.3s;
+                &:hover {
+                    color: #fff;
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 0;
+                    height: 100%;
+                    background: #ea062b;
+                    z-index: -1;
+                }
+                &:hover::after {
+                    width: 100%;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 70%;
+        height: 5px;
+        background: #ea062b;
+    }
+}
+.service-details-two {
+    .service-form-content {
+        padding: 30px 20px;
+        background: #ea062b;
+        .sub-title {
+            font-size: 18px;
+            line-height: 28px;
+            color: #fff;
+            font-weight: 700;
+            text-transform: capitalize;
+            display: inline-block;
+            margin-bottom: 25px;
+        }
+        .form-des {
+            color: #fff;
+            margin-bottom: 40px;
+        }
+        .custom-btn {
+            padding: 13px 43px;
+            font-size: 18px;
+            font-weight: 600;
+            background: #111111;
+            color: #fff;
+            border: 1px solid #111111;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.3s;
+            &:hover {
+                background: #ea062b;
+                color: #fff;
+            }
+        }
+    }
+}
+.service-details-three {
+    background: #f1f1f1;
+    padding: 30px 20px;
+    position: relative;
+    .service-message-widget {
+        h5 {
+            font-size: 28px;
+        }
+        .service-form-widget {
+            form {
+                input {
+                    width: 100%;
+                    box-sizing: border-box;
+                    margin-bottom: 16px;
+                    padding: 10px;
+                    color: #8c8c8c;
+                    font-weight: 400;
+                    text-transform: capitalize;
+                    border: 1px solid #cacaca;
+                    background: #fff;
+                    outline: none;
+                    &:focus {
+                        border: 1px solid #ea062b;
+                    }
+                }
+                textarea {
+                    width: 100%;
+                    box-sizing: border-box;
+                    margin-bottom: 30px;
+                    padding: 13px;
+                    color: #8c8c8c;
+                    font-weight: 400;
+                    text-transform: capitalize;
+                    border: 1px solid #cacaca;
+                    background: #fff;
+                    outline: none;
+                    &:focus {
+                        border: 1px solid #ea062b;
+                    }
+                }
+                .service-widget-btn {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 11px 15px;
+                    background: #111111;
+                    color: #fff;
+                    font-size: 18px;
+                    font-weight: 600;
+                    transition: 0.3s;
+                    border: none;
+                    &:hover {
+                        background: #ea062b;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 70%;
+        height: 5px;
+        background: #ea062b;
+    }
+}
+.service-details-right {
+    .top-content {
+        h2 {
+            @include screen-768 {
+                font-size: 42px;
+            }
+            @include screen-576 {
+                font-size: 36px;
+            }
+        }
+    }
+    .accordion {
+        .accordion-item {
+            border: none;
+            box-shadow: 0px 16px 35px 0px rgba(0, 0, 0, 0.15);
+            .accordion-header {
+                .accordion-button {
+                    font-size: 20px;
+                    font-weight: 600;
+                    &::after {
+                        background: none;
+                        content: "\f0d7";
+                        font-family: "FontAwesome";
+                        width: auto;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/********* Service details Section End *********/

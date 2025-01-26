@@ -1,0 +1,29 @@
+/******* Terms *********/
+
+/******** Terms Section Start *******/
+.terms-section {
+    padding: 100px 0;
+    @include screen-768 {
+        padding: 50px 0;
+    }
+}
+.terms-reasons {
+    h2 {
+        font-size: 42px;
+    }
+}
+.terms-essential {
+    .terms-essential-list {
+        li {
+            display: flex;
+            gap: 10px;
+            span {
+                color: #ea062b;
+            }
+            +li {
+                margin-top: 20px;
+            }
+        }
+    }
+}
+/******** Terms Section End *******/

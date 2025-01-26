@@ -1,0 +1,497 @@
+/***** Home Page 2 **********/
+
+/****** Hero Section 2 Start *******/
+
+.hero-section-2 {
+    background-repeat: no-repeat;
+    padding: 240px 0;
+    z-index: 1;
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: #00000082;
+        z-index: -1;
+    }
+    @include screen-1200 {
+        background-size: cover;
+    }
+}
+.hero-content-2 {
+    .hero-subtitle-2 {
+        h4 {
+            color: #fff;
+            margin-bottom: 35px;
+        }
+    }
+    .hero-title-2 {
+        h2 {
+            font-size: 65px;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 45px;
+            @include screen-576 {
+                font-size: 50px;
+            }
+            @include screen-376 {
+                font-size: 46px;
+            }
+        }
+    }
+    .hero-btn-2 {
+        .red-btn {
+            padding: 13px 35px;
+            background: #ea062b;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 500;
+            margin: 5px 5px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.3s;
+            &:hover {
+                background: #111111;
+                color: #fff;
+            }
+        }
+        .black-btn {
+            padding: 13px 35px;
+            background: #111111;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 500;
+            margin: 5px 5px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.3s;
+            &:hover {
+                background: #ea062b;
+                color: #fff;
+            }
+        }
+    }
+}
+/*********** Hero Section 2 End ***************/
+
+/*********** Counter Section 2 Start **********/
+.counter-section-2 {
+    background: #ea062b;
+    padding: 60px 0;
+    @include screen-768 {
+        padding: 30px 0;
+    }
+}
+/*********** Counter Section 2 End **********/
+
+
+/*********** Register Section 2 Start **********/
+.register-section-2 {
+    padding: 115px 0;
+    background: #f9f9f9;
+    position: relative;
+    @include screen-992 {
+        padding: 100px 0;
+    }
+    @include screen-768 {
+        padding: 80px 0;
+    }
+    @include screen-576 {
+        padding: 50px 0;
+    }
+    .register-title {
+        h2 {
+            @include screen-768 {
+                font-size: 42px;
+            }
+            @include screen-576 {
+                font-size: 36px;
+            }
+        }
+    }
+}
+/*********** Register Section 2 End **********/
+
+/*********** Circle Section Start **********/
+.circle-section {
+    padding: 115px 0;
+    background: #f9f9f9;
+    @include screen-992 {
+        padding: 100px 0;
+    }
+    @include screen-768 {
+        padding: 80px 0;
+    }
+    @include screen-576 {
+        padding: 50px 0;
+    }
+    .circle-title {
+        h2 {
+            @include screen-768 {
+                font-size: 42px;
+            }
+            @include screen-576 {
+                font-size: 36px;
+            }
+        }
+    }
+}
+.circle-process {
+    ul {
+        position: relative;
+        img {
+            position: absolute;
+            width: 80px;
+            height: 84%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50% , -50%);
+        }
+        li {
+            .circle-content {
+                transition: 0.3s;
+                .circle-content-left {
+                    background: #fff;
+                    padding: 25px 20px;
+                    border-radius: 4px;
+                    padding-left: 30px;
+                    padding-right: 25px;
+                    box-shadow: 8px 12px 30px #00000026;
+                    position: relative;
+                    h5 {
+                        margin-bottom: 30px;
+                    }
+                    p {
+                        color: #666666;
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            width: 40px;
+                            height: 40px;
+                            background: #fff;
+                            right: -19px;
+                            top: 50%;
+                            transform: translateY(-50%) rotate(45deg);
+                        }
+                    }
+                }
+                .circle-content-right {
+                    background: #fff;
+                    padding: 25px 20px;
+                    border-radius: 4px;
+                    padding-left: 30px;
+                    padding-right: 25px;
+                    box-shadow: -9px 12px 30px #00000026;
+                    position: relative;
+                    h5 {
+                        margin-bottom: 30px;
+                    }
+                    p {
+                        color: #666666;
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            width: 40px;
+                            height: 40px;
+                            background: #fff;
+                            left: -19px;
+                            top: 50%;
+                            transform: translateY(-50%) rotate(45deg);
+                        }
+                    }
+                }
+                .circle-number {
+                    width: 52px;
+                    height: 52px;
+                    background: #fff;
+                    color: #111111;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    box-shadow: 0px 0px 20px #0000002b;
+                    font-size: 20px;
+                    font-weight: 700;
+                    border-radius: 50%;
+                    flex-shrink: 0;
+                    z-index: 33;
+                }
+                &:hover .circle-content-left {
+                    background: #ea062b;
+                    box-shadow: 0px 0px 30px #ff000061;
+                }
+                &:hover .circle-content-right {
+                    background: #ea062b;
+                    box-shadow: 0px 0px 30px #ff000061;
+                }
+                &:hover .circle-number {
+                    background: #ea062b;
+                    color: #fff;
+                    box-shadow: 0px 0px 30px #ff000061;
+                }
+                &:hover .circle-content-left h5 {
+                    color: #fff;
+                }
+                &:hover .circle-content-left p {
+                    color: #fff;
+                }
+                &:hover .circle-content-right h5 {
+                    color: #fff;
+                }
+                &:hover .circle-content-right p {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+/*********** Circle Section End **********/
+
+/*********** Popular Section Start **********/
+.popular-section {
+    padding: 115px 0;
+    background: #f9f9f9;
+    @include screen-992 {
+        padding: 100px 0;
+    }
+    @include screen-768 {
+        padding: 80px 0;
+    }
+    @include screen-576 {
+        padding: 50px 0;
+    }
+    .popular-title {
+        margin-bottom: 60px;
+        h2 {
+            @include screen-768 {
+                font-size: 42px;
+            }
+            @include screen-576 {
+                font-size: 36px;
+            }
+        }
+    }
+}
+.popular-card {
+    background: #fff;
+    box-shadow: 0px 9px 52px 0px rgba(0, 0, 0, 0.07);
+    padding: 15px;
+    height: 100%;
+    .popular-img {
+        transition: 0.3s;
+        overflow: hidden;
+        .date-tags {
+            position: absolute;
+            width: 70px;
+            height: 70px;
+            background: #ea062b;
+            color: #fff;
+            flex-direction: column;
+            top: 15px;
+            left: 15px;
+            text-transform: capitalize;
+            b {
+                font-weight: 700;
+            }
+        }
+        &:hover img {
+            transform: scale(1.1);
+        }
+    }
+    .popular-content {
+        a {
+            color: #111111;
+            h4 {
+                transition: 0.3s;
+                &:hover {
+                    color: #ea062b;
+                }
+            }
+            h6 {
+                transition: 0.3s;
+                &:hover {
+                    color: #ea062b;
+                }
+            }
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        span {
+            margin-bottom: 30px;
+            i {
+                color: #ea062b;
+                margin-right: 6px;
+            }
+        }
+    }
+}
+/*********** Popular Section End **********/
+
+/*********** Testimonial Section Start **********/
+.testimonial-section {
+    padding: 115px 0;
+    background: #f9f9f9;
+    @include screen-992 {
+        padding: 100px 0;
+    }
+    @include screen-768 {
+        padding: 80px 0;
+    }
+    @include screen-576 {
+        padding: 50px 0;
+    }
+    .testimonial-title {
+        margin-bottom: 60px;
+        h2 {
+            @include screen-768 {
+                font-size: 42px;
+            }
+            @include screen-576 {
+                font-size: 36px;
+            }
+        }
+    }
+}
+.testimonial-content {
+    background: #ea062b;
+    padding: 50px 0;
+}
+.testimonial-card {
+    span {
+        font-size: 40px;
+        font-weight: 700;
+        color: #fff;
+        line-height: 0;
+    }
+    p {
+        font-weight: 400;
+    }
+}
+.testimonial-owner {
+    img {
+        display: inline-block;
+    }
+    h6 {
+        span {
+            font-size: 16px;
+            font-weight: 400;
+            color: #fff;
+        }
+    }
+}
+/*********** Testimonial Section End **********/
+
+
+/*********** Gallary Section Start **********/
+.gallary-section {
+    padding: 115px 0;
+    background: #f9f9f9;
+    @include screen-992 {
+        padding: 100px 0;
+    }
+    @include screen-768 {
+        padding: 80px 0;
+    }
+    @include screen-576 {
+        padding: 50px 0;
+    }
+    .gallary-title {
+        margin-bottom: 60px;
+        h2 {
+            @include screen-768 {
+                font-size: 42px;
+            }
+            @include screen-576 {
+                font-size: 36px;
+            }
+        }
+    }
+}
+.gallary-item {
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    img {
+        transform: scale(1);
+        width: 100%;
+    }
+    a {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #00000094;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        left: 0;
+        top: 0;
+        visibility: hidden;
+        opacity: 0;
+        transform: scale(0.5);
+        i {
+            width: 45px;
+            height: 45px;
+            background: #fff;
+            color: #ea062b;
+            font-size: 20px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+    }
+    &:hover img {
+        transform: scale(1.09);
+    }
+    &:hover a {
+        visibility: visible;
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.gallary-slider {
+    .slick-dots {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        margin-top: 50px;
+        li {
+            display: inline-block;
+            button {
+                width: 22px; 
+                height: 22px;
+                font-size: 0px;
+                border: 5px solid #e7e7e7;
+                margin: 3px 0;
+                background: transparent; 
+                border-radius: 50%; 
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                outline: 1px solid #ea062b;
+            }
+            &.slick-active {
+                button {
+                    background: #ea062b;
+                }
+            }
+        }
+    }
+}
+
+/*********** Gallary Section End **********/
+
+
+/*********** Form Section Start **********/
+.form-section-2 {
+    padding-bottom: 90px;
+}
+/*********** Form Section End **********/
+
